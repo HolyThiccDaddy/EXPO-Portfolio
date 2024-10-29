@@ -1,0 +1,307 @@
+body {
+    background-color: #080424;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181444;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 1;
+    z-index: 1000;
+    color: #ffd404;
+}
+
+.nav-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd404;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    color: #ffd404;
+}
+
+.nav-items div {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    color: #ffd404;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    color: #ffd404;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    color: #ffd404;
+}
+
+
+.nav-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd404;
+}
+
+
+.greettext-container {
+    display: flex;
+    width: 90%;
+    height: 90vh;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.greettext, .greetpic {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greettext {
+    font-size: 65px;
+    text-align: center;
+    color: aliceblue;
+    line-height: 1.2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.greetpic img {
+    max-width: 115%;
+    height: auto;
+}
+
+.aboutme-container {
+    width: 90%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.aboutme-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.aboutme-info {
+    width: 50%;
+}
+
+.aboutmehead {
+    color: #ffd404;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aboutmetext {
+    color: aliceblue;
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.aboutmepic {
+    width: 40%;
+    margin-left: 20px;
+}
+
+.aboutmepic img {
+    width: 100%;
+    height: auto;
+}
+
+.Education-container {
+    width: 70%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.Education-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Educationpic {
+    width: 40%;
+}
+
+.Educationpic img {
+    width: 100%;
+    height: auto;
+}
+
+.Educationtext {
+    font-size: 45px;
+    text-align: left;
+    color: aliceblue;
+    line-height: 1.5;
+    padding-left: 5px;
+    box-sizing: border-box;
+    padding-top: 7%;
+}
+.Education-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.Education-info {
+    width: 50%;
+}
+
+.Educationhead {
+    color: #ffd404;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.Educationtext {
+    color: aliceblue;
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.Educationpic {
+    width: 40%;
+    margin-left: 20px;
+}
+
+.Educationpic img {
+    width: 100%;
+    height: auto;
+}
+.skillhead{
+    text-align: center;
+    color: #ffd404;
+    font-size: 80px;
+    font-weight: bold;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #ffd404;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'horizon';
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.contact-container {
+    font-size: 50px;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.yellow{
+    color: #ffd404;
+}
